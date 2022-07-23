@@ -4,6 +4,8 @@
 zip: github.com/aditirai290698/creating_e-invitations/archive/refs/heads/main.zip
 base: https://raw.githubusercontent.com/aditirai290698/creating_e-invitations/main
 
--- fpm.dependency: fifthtry.github.io/doc-site as ds
+-- fpm.dependency: fifthtry.github.io/doc-site as aditi
 
--- fpm.auto-import: ds
+-- fpm.auto-import: aditi
+-- fpm.auto-import: fpm
+-- fpm.auto-import: aditirai290698.github.io/learning_ftd/FPM/config
