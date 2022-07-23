@@ -1,9 +1,12 @@
 -- import: fpm
 
--- fpm.package: <user_name>.github.io/<repo_name>
-zip: github.com/<user_name>/<repo_name>/archive/refs/heads/main.zip
-base: https://raw.githubusercontent.com/<user_name>/<repo_name>/main
+-- fpm.package: aditirai290698.github.io/creating_e-invitations
+zip: github.com/aditirai290698/creating_e-invitations/archive/refs/heads/main.zip
+base: https://raw.githubusercontent.com/aditirai290698/creating_e-invitations/main
 
--- fpm.dependency: fifthtry.github.io/doc-site as ds
+-- fpm.dependency: fifthtry.github.io/doc-site as aditi
 
--- fpm.auto-import: ds
+-- fpm.auto-import: aditi
+-- fpm.auto-import: fpm
+-- fpm.auto-import: aditirai290698.github.io/creating_e-invitations/FPM/config
+-- fpm.auto-import: aditirai290698.github.io/creating_e-invitations/assets
