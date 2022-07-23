@@ -86,7 +86,7 @@ align: center
 
 --- ftd.column:
 spacing: 8
-background-color: $fpm.cta-secondary.text
+background-color: $fpm.color.main.cta-secondary.text
 align: center
 padding-vertical: $fpm.space.space-2
 padding-horizontal: $fpm.space.space-2
@@ -95,7 +95,7 @@ max-width: 756
 
 --- ftd.text:
 text: $body
-color: $fpm.color.main.text
+color: $fpm.color.main.background.step-1
 role: $fpm.type.heading-small
 padding-horizontal: $fpm.space.space-7
 margin-top: 16
