@@ -1,1 +1,123 @@
--- aditi.page: hello world
+-- import: aditirai290698.github.io/creating_e-invitations/assets
+
+
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+
+
+
+
+-- aditi.page: E-INVITATIONS
+
+This page shows you template for e-cards using ftd.
+
+
+
+
+
+-- aditi.h2: BIRTHDAY E-CARD
+
+-- aditi.code: Code for  `-- CARD-1`
+lang: ftd
+
+\-- card-1: Join us
+
+FOR A
+
+SUPRISE 
+
+BIRTHDAY PARTY
+
+honoring Carter
+
+FRIDAY | JULY  22 | 6PM
+
+PLATFORM THIRTY
+440 CRESSON STREET
+PHILADELPHIA
+
+rsvp at 123.456.7890
+
+
+
+
+
+
+-- card-1: Join us
+
+
+FOR A
+
+SUPRISE 
+
+BIRTHDAY PARTY
+
+honoring Carter
+
+FRIDAY | JULY  22 | 6PM
+
+PLATFORM THIRTY
+440 CRESSON STREET
+PHILADELPHIA
+
+rsvp at 123.456.7890
+
+
+
+
+
+
+
+
+-- ftd.column card-1:
+optional caption title:
+optional string label:
+ftd.image-src src: $assets.files.bg2.png
+body body:
+min-width: percent 50
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+background-image: $src
+background-repeat: false
+padding-vertical: $fpm.space.space-8
+padding-horizontal:  $fpm.space.space-8
+width: auto
+width if $is-mobile: fill
+align: center
+
+
+--- ftd.column:
+spacing: 8
+background-color: $fpm.color.main.background.base
+align: center
+padding-vertical: $fpm.space.space-2
+padding-horizontal: $fpm.space.space-2
+max-width: 756
+
+
+--- ftd.text:
+text: $body
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+padding-horizontal: $fpm.space.space-7
+margin-top: 16
+margin-bottom: 16
+text-align: center
+
+--- ftd.text: $title
+align: center
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+padding-horizontal: $fpm.space.space-7
+
+--- ftd.text: $label
+align: center
+role: $fpm.type.copy-tight
+color: $fpm.color.main.text
+padding-horizontal: $fpm.space.space-7
+
+--- container: ftd.main
