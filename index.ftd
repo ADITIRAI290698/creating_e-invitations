@@ -92,7 +92,7 @@ align: center
 
 --- ftd.column:
 spacing: 8
-background-color: $fpm.color.main.background.base
+background-color: $fpm.cta-secondary.text
 align: center
 padding-vertical: $fpm.space.space-2
 padding-horizontal: $fpm.space.space-2
