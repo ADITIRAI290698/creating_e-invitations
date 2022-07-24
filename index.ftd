@@ -149,14 +149,12 @@ background-color: $trans
 
 
 
-
-
-
-
 -- aditi.h2: ANNIVERSARY E-CARD
+
 
 -- aditi.code: Code for  `-- CARD-2`
 lang: ftd
+
 
 \-- card-2:
 
@@ -173,12 +171,18 @@ SAN DIEGO, CA
 RSVP:123.456.7890
 
 
+
+
+
 --- ftd.text: Output of above:
 padding-vertical: 10
 color: $fpm.color.main.text
 role: $fpm.type.heading-small
 text-align: center
 align: left
+
+
+
 
 
 
@@ -193,16 +197,11 @@ card-desc3: $s3
 card-desc4: $s4
 
 
-
-
 -- string s1:
 
 Join us as we
 
 celebrate our
-
-
-
 
 
 -- string s2:
@@ -212,13 +211,10 @@ celebrate our
 Anniversary
 
 
-
 -- string s3:
 
 Anushka & Virat 
-
 Kohli
-
 
 
 -- string s4:
@@ -275,6 +271,7 @@ align: center
 --- ftd.text:
 text: $card-desc1
 color: $fpm.color.main.background.step-1
+padding-vertical: $fpm.space.space-2
 role: $fpm.type.copy-large
 align: center
 text-align: center
