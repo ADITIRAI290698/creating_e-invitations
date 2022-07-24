@@ -24,10 +24,11 @@ This page shows you template for e-cards using ftd.
 -- aditi.code: Code for  `-- CARD-1`
 lang: ftd
 
-\-- card-1: Join us
+\-- card-1: 
 
+Join us
 FOR A
-SUPRISE 
+SURPRISE 
 BIRTHDAY PARTY
 honoring Carter
 FRIDAY | JULY  22 | 6PM
@@ -41,12 +42,27 @@ rsvp at 123.456.7890
 
 
 
--- card-1: Join us
+-- card-1: 
+card-desc1: $t1
+card-desc2: $t2
 
+
+
+
+
+-- string t1:
+
+Join us
+
+
+
+
+
+-- string t2:
 
 FOR A
 
-SUPRISE 
+SURPRISE 
 
 BIRTHDAY PARTY
 
@@ -71,7 +87,147 @@ rsvp at 123.456.7890
 optional caption title:
 optional string label:
 ftd.image-src src: $assets.files.bg2.png
-body body:
+optional string card-desc1:
+optional string card-desc2:
+min-width: percent 50
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+background-image: $src
+background-repeat: false
+width: auto
+width if $is-mobile: fill
+align: center
+
+
+--- ftd.column:
+background-color: $fpm.color.main.cta-secondary.text
+align: left
+
+
+
+--- ftd.text:
+text: $card-desc1
+color: $fpm.color.main.custom.five
+role: $fpm.type.heading-small
+margin-top: 10
+margin-bottom: 10
+text-align: center
+
+
+
+--- ftd.column:
+background-color: $fpm.color.main.cta-secondary.text
+align: center
+
+
+
+--- ftd.text:
+text: $card-desc2
+color: $fpm.color.main.background.step-1
+role: $fpm.type.heading-small
+margin-top: 10
+margin-bottom: 10
+text-align: center
+
+--- container: ftd.main
+
+
+
+
+
+
+
+
+
+
+-- aditi.h2: ANNIVERSARY E-CARD
+
+-- aditi.code: Code for  `-- CARD-2`
+lang: ftd
+
+\-- card-2:
+
+Join us as we
+celebrate our
+50th
+Anniversary
+Anushka & Virat 
+Kohli
+SATURDAY, SEPTEMBER 16TH, 2022
+7 0'CLOCK IN THE EVENING
+1152 DARK STAR LANE
+SAN DIEGO, CA
+RSVP:123.456.7890
+
+
+
+
+
+
+
+
+
+
+-- card-2: 
+card-desc1: $s1
+card-desc2: $s2
+card-desc3: $s3
+card-desc4: $s4
+
+
+
+
+-- string s1:
+
+Join us as we
+
+celebrate our
+
+
+
+
+
+-- string s2:
+
+50th
+
+Anniversary
+
+
+
+-- string s3:
+
+Anushka & Virat 
+
+Kohli
+
+
+
+-- string s4:
+
+SATURDAY, SEPTEMBER 16TH, 2022
+7 0'CLOCK IN THE EVENING
+1152 DARK STAR LANE
+SAN DIEGO, CA
+RSVP:123.456.7890
+
+
+
+
+
+
+
+
+
+
+-- ftd.column card-2:
+optional caption title:
+optional string label:
+ftd.image-src src: $assets.files.bg1.png
+optional string card-desc1:
+optional string card-desc2:
+optional string card-desc3:
+optional string card-desc4:
 min-width: percent 50
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
@@ -94,24 +250,44 @@ max-width: 756
 
 
 --- ftd.text:
-text: $body
-color: $fpm.color.main.background.step-1
+text: $card-desc1
+color: $fpm.color.main.text
 role: $fpm.type.heading-small
 padding-horizontal: $fpm.space.space-7
 margin-top: 16
 margin-bottom: 16
 text-align: center
 
---- ftd.text: $title
-align: center
-role: $fpm.type.copy-tight
-color: $fpm.color.main.text
-padding-horizontal: $fpm.space.space-7
 
---- ftd.text: $label
-align: center
-role: $fpm.type.copy-tight
+
+--- ftd.text:
+text: $card-desc2
 color: $fpm.color.main.text
+role: $fpm.type.heading-small
 padding-horizontal: $fpm.space.space-7
+margin-top: 16
+margin-bottom: 16
+text-align: center
+
+
+--- ftd.text:
+text: $card-desc3
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+padding-horizontal: $fpm.space.space-7
+margin-top: 16
+margin-bottom: 16
+text-align: center
+
+
+--- ftd.text:
+text: $card-desc4
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+padding-horizontal: $fpm.space.space-7
+margin-top: 16
+margin-bottom: 16
+text-align: center
+
 
 --- container: ftd.main
