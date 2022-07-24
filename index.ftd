@@ -1,11 +1,15 @@
 -- import: aditirai290698.github.io/creating_e-invitations/assets
 
 
-
 -- boolean is-mobile: false
 
 -- is-mobile: true
 if: $ftd.device == mobile
+
+
+-- ftd.color trans:
+light: rgba(255,0,0,0.0)
+dark: rgba(255,0,0,0.0)
 
 
 
@@ -41,15 +45,20 @@ rsvp at 123.456.7890
 
 
 
---- tf.markdown: 
+--- ftd.text: Output of above:
+padding-vertical: 10
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+text-align: center
+align: left
 
-Output of above:
 
 
 
 
 
--- card-1: 
+
+-- card-1:
 card-desc1: $t1
 card-desc2: $t2
 
@@ -60,9 +69,6 @@ card-desc2: $t2
 -- string t1:
 
 Join us
-
-
-
 
 
 -- string t2:
@@ -84,16 +90,10 @@ PHILADELPHIA
 rsvp at 123.456.7890
 
 
-
-
-
-
-
-
 -- ftd.column card-1:
 optional caption title:
 optional string label:
-ftd.image-src src: $assets.files.bg2.png
+ftd.image-src src: $assets.files.bg1.png
 optional string card-desc1:
 optional string card-desc2:
 min-width: percent 50
@@ -101,30 +101,30 @@ margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
 background-image: $src
 background-repeat: false
-width: auto
+padding-vertical: $fpm.space.space-8
+padding-horizontal:  $fpm.space.space-8
+width: percent 100
+height: 560
 width if $is-mobile: fill
 align: center
 
 
 --- ftd.column:
-background-color: $fpm.color.main.cta-secondary.text
-align: left
-
+background-color: $trans
+align: center
+padding-vertical: $fpm.space.space-2
+padding-horizontal: $fpm.space.space-2
+max-width: 756
+align: center
 
 
 --- ftd.text:
 text: $card-desc1
-color: $fpm.color.main.custom.five
-role: $fpm.type.heading-small
-margin-top: 10
-margin-bottom: 10
-text-align: center
-
-
-
---- ftd.column:
-background-color: $fpm.color.main.cta-secondary.text
+color: $fpm.color.main.background.step-1
+role: $fpm.type.heading-large
 align: center
+text-align: center
+background-color: $trans
 
 
 
@@ -132,11 +132,17 @@ align: center
 text: $card-desc2
 color: $fpm.color.main.background.step-1
 role: $fpm.type.heading-small
-margin-top: 10
-margin-bottom: 10
+padding-horizontal: $fpm.space.space-7
 text-align: center
+align: center
+background-color: $trans
+
 
 --- container: ftd.main
+
+
+
+
 
 
 
@@ -167,7 +173,12 @@ SAN DIEGO, CA
 RSVP:123.456.7890
 
 
-
+--- ftd.text: Output of above:
+padding-vertical: 10
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+text-align: center
+align: left
 
 
 
@@ -213,9 +224,12 @@ Kohli
 -- string s4:
 
 SATURDAY, SEPTEMBER 16TH, 2022
+
 7 0'CLOCK IN THE EVENING
+
 1152 DARK STAR LANE
 SAN DIEGO, CA
+
 RSVP:123.456.7890
 
 
@@ -230,7 +244,7 @@ RSVP:123.456.7890
 -- ftd.column card-2:
 optional caption title:
 optional string label:
-ftd.image-src src: $assets.files.bg1.png
+ftd.image-src src: $assets.files.bg2.png
 optional string card-desc1:
 optional string card-desc2:
 optional string card-desc3:
@@ -242,59 +256,60 @@ background-image: $src
 background-repeat: false
 padding-vertical: $fpm.space.space-8
 padding-horizontal:  $fpm.space.space-8
-width: auto
+height: 950
+width: percent 100
 width if $is-mobile: fill
 align: center
 
 
 --- ftd.column:
-spacing: 8
-background-color: $fpm.color.main.cta-secondary.text
+spacing: 2
+background-color: $trans
 align: center
 padding-vertical: $fpm.space.space-2
 padding-horizontal: $fpm.space.space-2
 max-width: 756
+align: center
 
 
 --- ftd.text:
 text: $card-desc1
-color: $fpm.color.main.text
-role: $fpm.type.heading-small
-padding-horizontal: $fpm.space.space-7
-margin-top: 16
-margin-bottom: 16
+color: $fpm.color.main.background.step-1
+role: $fpm.type.heading-large
+align: center
 text-align: center
+background-color: $trans
 
 
 
 --- ftd.text:
 text: $card-desc2
-color: $fpm.color.main.text
+color: $fpm.color.main.background.step-1
 role: $fpm.type.heading-small
 padding-horizontal: $fpm.space.space-7
-margin-top: 16
-margin-bottom: 16
 text-align: center
+align: center
+background-color: $trans
 
 
 --- ftd.text:
 text: $card-desc3
-color: $fpm.color.main.text
+color: $fpm.color.main.background.step-1
 role: $fpm.type.heading-small
 padding-horizontal: $fpm.space.space-7
-margin-top: 16
-margin-bottom: 16
 text-align: center
+align: center
+background-color: $trans
 
 
 --- ftd.text:
 text: $card-desc4
-color: $fpm.color.main.text
+color: $fpm.color.main.background.step-1
 role: $fpm.type.heading-small
 padding-horizontal: $fpm.space.space-7
-margin-top: 16
-margin-bottom: 16
 text-align: center
+align: center
+background-color: $trans
 
 
 --- container: ftd.main
