@@ -155,6 +155,7 @@ align: center
 
 --- ftd.text:
 text: $card-desc1
+padding-vertical: $fpm.space.space-6
 color: $fpm.color.main.background.step-1
 role: $fpm.type.heading-hero
 align: center
@@ -196,6 +197,7 @@ background-color: $trans
 text: $card-desc5
 color: $fpm.color.main.background.step-1
 role: $fpm.type.copy-tight
+padding-horizontal: $fpm.space.space-2
 padding-horizontal: $fpm.space.space-7
 text-align: center
 align: center
