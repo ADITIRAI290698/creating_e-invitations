@@ -131,7 +131,7 @@ background-color: $trans
 --- ftd.text:
 text: $card-desc2
 color: $fpm.color.main.background.step-1
-role: $fpm.type.heading-small
+role: $fpm.type.heading-large
 padding-horizontal: $fpm.space.space-7
 text-align: center
 align: center
@@ -285,7 +285,7 @@ background-color: $trans
 --- ftd.text:
 text: $card-desc2
 color: $fpm.color.main.background.step-1
-role: $fpm.type.heading-small
+role: $fpm.type.heading-large
 padding-horizontal: $fpm.space.space-7
 text-align: center
 align: center
@@ -295,7 +295,7 @@ background-color: $trans
 --- ftd.text:
 text: $card-desc3
 color: $fpm.color.main.background.step-1
-role: $fpm.type.heading-small
+role: $fpm.type.heading-large
 padding-horizontal: $fpm.space.space-7
 text-align: center
 align: center
@@ -305,7 +305,7 @@ background-color: $trans
 --- ftd.text:
 text: $card-desc4
 color: $fpm.color.main.background.step-1
-role: $fpm.type.heading-small
+role: $fpm.type.heading-large
 padding-horizontal: $fpm.space.space-7
 text-align: center
 align: center
