@@ -5,8 +5,10 @@ zip: github.com/aditirai290698/creating_e-invitations/archive/refs/heads/main.zi
 base: https://raw.githubusercontent.com/aditirai290698/creating_e-invitations/main
 
 -- fpm.dependency: fifthtry.github.io/doc-site as aditi
+-- fpm.dependency: fifthtry.github.io/package-doc as pd
 
 -- fpm.auto-import: aditi
 -- fpm.auto-import: fpm
+-- fpm.auto-import: pd/typography as tf
 -- fpm.auto-import: aditirai290698.github.io/creating_e-invitations/FPM/config
 -- fpm.auto-import: aditirai290698.github.io/creating_e-invitations/assets
