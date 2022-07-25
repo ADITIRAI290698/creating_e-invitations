@@ -520,7 +520,7 @@ background-color: $fpm.color.main.custom.two
 text: $card-desc2
 color: $fpm.color.main.background.step-1
 role: $fpm.type.heading-small
-padding-top: $fpm.space.space-10
+padding-top: $fpm.space.space-8
 padding-bottom: $fpm.space.space-10
 padding-horizontal: $fpm.space.space-7
 text-align: center
