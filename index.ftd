@@ -850,6 +850,7 @@ background-color: $trans
 text: $card-desc3
 color: $fpm.color.main.warning.text
 role: $fpm.type.heading-large
+padding-top: $fpm.space.space-7
 padding-horizontal: $fpm.space.space-7
 text-align: center
 align: center
