@@ -668,7 +668,7 @@ align: center
 
 --- ftd.text:
 text: $card-desc1
-padding-bottom: $fpm.space.space-4
+padding-bottom: $fpm.space.space-7
 padding-vertical: $fpm.space.space-6
 color: $fpm.color.main.success.border
 role: $fpm.type.heading-hero
