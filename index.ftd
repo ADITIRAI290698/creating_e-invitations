@@ -787,3 +787,73 @@ and for help to make it so much fun!
 -- string w3:
 
 Love, Alliana
+
+
+
+
+
+
+
+
+
+
+-- ftd.column card-5:
+optional caption title:
+optional string label:
+ftd.image-src src: $assets.files.bg5.png
+optional string card-desc1:
+optional string card-desc2:
+optional string card-desc3:
+min-width: percent 50
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+background-image: $src
+background-repeat: false
+padding-vertical: $fpm.space.space-8
+padding-horizontal:  $fpm.space.space-8
+width: percent 100
+height: 560
+width if $is-mobile: fill
+align: center
+
+
+--- ftd.column:
+background-color: $trans
+align: center
+padding-vertical: $fpm.space.space-2
+padding-horizontal: $fpm.space.space-2
+max-width: 756
+align: center
+
+
+--- ftd.text:
+text: $card-desc1
+padding-vertical: $fpm.space.space-6
+color: $fpm.color.main.cta-primary.border
+role: $fpm.type.heading-hero
+align: center
+text-align: center
+background-color: $trans
+
+
+--- ftd.text:
+text: $card-desc2
+color: $fpm.color.main.shadow
+role: $fpm.type.heading-small
+padding-horizontal: $fpm.space.space-7
+text-align: center
+align: center
+background-color: $trans
+
+
+--- ftd.text:
+text: $card-desc3
+color: $fpm.color.main.warning.text
+role: $fpm.type.heading-large
+padding-horizontal: $fpm.space.space-7
+text-align: center
+align: center
+background-color: $trans
+
+
+--- container: ftd.main
