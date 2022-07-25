@@ -49,7 +49,7 @@ rsvp at 123.456.7890
 
 
 --- ftd.text: Output of above:
-padding-vertical: 10
+padding-vertical: 12
 color: $fpm.color.main.text
 role: $fpm.type.heading-small
 text-align: center
@@ -261,7 +261,7 @@ RSVP:123.456.7890
 
 
 --- ftd.text: Output of above:
-padding-vertical: 10
+padding-vertical: 12
 color: $fpm.color.main.text
 role: $fpm.type.heading-small
 text-align: center
@@ -393,6 +393,152 @@ padding-horizontal: $fpm.space.space-6
 text-align: center
 align: center
 background-color: $trans
+
+
+--- container: ftd.main
+
+
+
+
+
+
+
+
+
+
+-- aditi.h2: CHRISTMAS E-CARD
+
+
+-- aditi.code: Code for  `-- CARD-3`
+lang: ftd
+
+
+\-- card-3:
+
+To: Jane Fowler
+
+To Jane,
+Merry Christmas and a Happy New Year!
+Enjoy the rest of the holidays without any worry.
+You deserve this time off for yourself.
+
+From: Sean Smith
+
+
+
+
+
+--- ftd.text: Output of above:
+padding-vertical: 12
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+text-align: center
+align: left
+
+
+
+
+
+-- card-3: 
+card-desc1: $u1
+card-desc2: $u2
+card-desc3: $u3
+
+
+
+-- string u1:
+
+To: Jane Fowler
+
+
+-- string u2:
+
+To Jane,
+
+Merry Christmas and a Happy New Year!
+
+Enjoy the rest of the holidays without any worry.
+
+You deserve this time off for yourself.
+
+
+-- string u3:
+
+From: Sean Smith
+
+
+
+
+
+
+
+
+
+
+-- ftd.column card-3:
+optional caption title:
+optional string label:
+ftd.image-src src: $assets.files.bg3.png
+optional string card-desc1:
+optional string card-desc2:
+optional string card-desc3:
+min-width: percent 50
+margin-top: $fpm.space.space-6
+margin-bottom: $fpm.space.space-6
+background-image: $src
+background-repeat: false
+padding-vertical: $fpm.space.space-8
+padding-horizontal:  $fpm.space.space-8
+width: percent 100
+height: 560
+width if $is-mobile: fill
+align: center
+
+
+--- ftd.column:
+background-color: $trans
+align: center
+padding-vertical: $fpm.space.space-2
+padding-horizontal: $fpm.space.space-2
+max-width: 756
+align: center
+
+
+--- ftd.text:
+text: $card-desc1
+padding-vertical: $fpm.space.space-2
+padding-left: $fpm.space.space-2
+padding-right: $fpm.space.space-2
+color: $fpm.color.main.text-strong
+role: $fpm.type.heading-small
+align: center
+text-align: center
+background-color: $fpm.color.main.custom.two
+
+
+--- ftd.text:
+text: $card-desc2
+color: $fpm.color.main.background.step-1
+role: $fpm.type.heading-small
+padding-top: $fpm.space.space-15
+padding-bottom: $fpm.space.space-15
+padding-horizontal: $fpm.space.space-7
+text-align: center
+align: center
+background-color: $trans
+
+
+--- ftd.text:
+text: $card-desc3
+padding-vertical: $fpm.space.space-2
+padding-left: $fpm.space.space-2
+padding-right: $fpm.space.space-2
+color: $fpm.color.main.text-strong
+role: $fpm.type.heading-small
+align: center
+text-align: center
+background-color: $fpm.color.main.custom.two
+
 
 
 --- container: ftd.main
