@@ -610,7 +610,7 @@ We will always wait for you.
 -- ftd.column card-4:
 optional caption title:
 optional string label:
-ftd.image-src src: $assets.files.bg1.png
+ftd.image-src src: $assets.files.bg4.png
 optional string card-desc1:
 optional string card-desc2:
 optional string card-desc3:
