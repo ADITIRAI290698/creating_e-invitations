@@ -588,7 +588,7 @@ rest and grid again.
 
 We will always wait for you.
 
-
+Love,Carla
 
 
 
@@ -607,6 +607,7 @@ align: left
 card-desc1: $v1
 card-desc2: $v2
 card-desc3: $v3
+card-desc4: $v4
 
 
 
@@ -618,12 +619,20 @@ Get Well Soon!
 -- string v2:
 
 Get your much-needed
+
 rest and grid again.
 
 
 -- string v3:
 
 We will always wait for you.
+
+
+-- string v4:
+
+Love,Carla
+
+
 
 
 
@@ -635,8 +644,6 @@ optional string card-desc1:
 optional string card-desc2:
 optional string card-desc3:
 optional string card-desc4:
-optional string card-desc5:
-optional string card-desc6:
 min-width: percent 50
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
@@ -662,7 +669,7 @@ align: center
 --- ftd.text:
 text: $card-desc1
 padding-vertical: $fpm.space.space-6
-color: $fpm.color.main.background.step-1
+color: $fpm.color.main.success.border
 role: $fpm.type.heading-hero
 align: center
 text-align: center
@@ -671,9 +678,11 @@ background-color: $trans
 
 --- ftd.text:
 text: $card-desc2
-color: $fpm.color.main.background.step-1
-role: $fpm.type.blockquote
+color: $fpm.color.main.success.border
+role: $fpm.type.heading-medium
+padding-vertical: $fpm.space.space-7
 padding-horizontal: $fpm.space.space-7
+padding-bottom: $fpm.space.space-1
 text-align: center
 align: center
 background-color: $trans
@@ -681,12 +690,25 @@ background-color: $trans
 
 --- ftd.text:
 text: $card-desc3
-color: $fpm.color.main.background.step-1
-role: $fpm.type.heading-large
+color: $fpm.color.main.success.border
+role: $fpm.type.copy-relaxed
+padding-vertical: $fpm.space.space-2
 padding-horizontal: $fpm.space.space-7
+padding-bottom: $fpm.space.space-10
 text-align: center
 align: center
 background-color: $trans
+
+
+--- ftd.text:
+text: $card-desc4
+color: $fpm.color.main.success.base
+role: $fpm.type.heading-large
+padding-vertical: $fpm.space.space-2
+padding-horizontal: $fpm.space.space-7
+text-align: center
+align: center
+background-color: $fpm.color.main.success.border
 
 
 --- container: ftd.main
