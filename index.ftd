@@ -668,8 +668,7 @@ align: center
 
 --- ftd.text:
 text: $card-desc1
-padding-bottom: $fpm.space.space-7
-padding-vertical: $fpm.space.space-6
+padding-vertical: $fpm.space.space-10
 color: $fpm.color.main.success.border
 role: $fpm.type.heading-hero
 align: center
@@ -713,4 +712,50 @@ background-color: $fpm.color.main.success.border
 
 
 --- container: ftd.main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- aditi.h2: THANK YOY SOON E-CARD
+
+
+-- aditi.code: Code for  `-- CARD-5`
+lang: ftd
+
+
+\-- card-5:
+
+Thank You !
+
+Thank you for sharing my special day,
+and for help to make it so much fun!
+
+Love, Alliana
+
+
+
+
+
+--- ftd.text: Output of above:
+padding-vertical: 12
+color: $fpm.color.main.text
+role: $fpm.type.heading-small
+text-align: center
+align: left
 
