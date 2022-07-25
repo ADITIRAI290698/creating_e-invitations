@@ -406,6 +406,16 @@ background-color: $trans
 
 
 
+
+
+
+
+
+
+
+
+
+
 -- aditi.h2: CHRISTMAS E-CARD
 
 
@@ -613,7 +623,7 @@ rest and grid again.
 
 -- string v3:
 
-We will always wait for you
+We will always wait for you.
 
 
 
@@ -624,6 +634,9 @@ ftd.image-src src: $assets.files.bg4.png
 optional string card-desc1:
 optional string card-desc2:
 optional string card-desc3:
+optional string card-desc4:
+optional string card-desc5:
+optional string card-desc6:
 min-width: percent 50
 margin-top: $fpm.space.space-6
 margin-bottom: $fpm.space.space-6
