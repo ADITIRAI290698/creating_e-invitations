@@ -828,6 +828,7 @@ align: center
 
 --- ftd.text:
 text: $card-desc1
+padding-top: $fpm.space.space-7
 padding-vertical: $fpm.space.space-6
 color: $fpm.color.main.cta-primary.border
 role: $fpm.type.heading-hero
@@ -840,6 +841,7 @@ background-color: $trans
 text: $card-desc2
 color: $fpm.color.main.shadow
 role: $fpm.type.heading-small
+padding-top: $fpm.space.space-2
 padding-horizontal: $fpm.space.space-7
 text-align: center
 align: center
